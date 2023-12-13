@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/restaurante/static/css/main.0abc5ca2.css",
-    "main.js": "/restaurante/static/js/main.66a82bee.js",
+    "main.css": "/restaurante/static/css/main.385932c7.css",
+    "main.js": "/restaurante/static/js/main.7004d9cc.js",
     "static/js/787.496d51a4.chunk.js": "/restaurante/static/js/787.496d51a4.chunk.js",
     "static/media/plato6.jpg": "/restaurante/static/media/plato6.2eb328023f156cf3bed3.jpg",
     "static/media/platoe6.jpg": "/restaurante/static/media/platoe6.e86e6510539a26c07c80.jpg",
@@ -35,12 +35,12 @@
     "static/media/facebook.svg": "/restaurante/static/media/facebook.5f80f53bf4de1263e1659792a33cee52.svg",
     "static/media/twitterx.svg": "/restaurante/static/media/twitterx.4b52fd3e5268f07f2dd43b0b70d50643.svg",
     "static/media/tiktok.svg": "/restaurante/static/media/tiktok.d6167ed635a607813843e6f708aa3cac.svg",
-    "main.0abc5ca2.css.map": "/restaurante/static/css/main.0abc5ca2.css.map",
-    "main.66a82bee.js.map": "/restaurante/static/js/main.66a82bee.js.map",
+    "main.385932c7.css.map": "/restaurante/static/css/main.385932c7.css.map",
+    "main.7004d9cc.js.map": "/restaurante/static/js/main.7004d9cc.js.map",
     "787.496d51a4.chunk.js.map": "/restaurante/static/js/787.496d51a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0abc5ca2.css",
-    "static/js/main.66a82bee.js"
+    "static/css/main.385932c7.css",
+    "static/js/main.7004d9cc.js"
   ]
 }
