@@ -2,9 +2,8 @@
 import './App.css';
 // App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Header from '../src/Components/Header';
-import Section from '../src/Components/Section';
 import Footer from '../src/Components/Footer';
 import Home from '../src/pages/Home'; // crea un archivo Home.js para la página de inicio
 import MenuPage from '../src/pages/MenuPage'; // crea un archivo MenuPage.js para la página del menú
@@ -21,32 +20,32 @@ import Contactos from '../src/pages/Contactos';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       {/* Muestra el componente Header en la parte superior de la aplicación */}
       <Header />
 
       {/* Muestra el componente Section, podrías personalizarlo según tus necesidades */}
-      <Section />
+      
       
       {/* Definición de rutas */}
       <Routes>
-      <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/menupage" element={<MenuPage />} />
-        <Route path="/promociones" element={<Promociones/>}/>
-        <Route path="/extranjeros" element={<Extranjeros/>}/>
-        <Route path="/tradicionales" element={<Tradicionales/>}/>
-        <Route path="/videos" element={<Videos/>}/>
-        <Route path="/registro" element={<Registro/>}/>
-        <Route path="/pedidos" element={<Pedidos/>}/>
-        <Route path="/perfil" element={<Perfil/>}/>
-        <Route path="/contactos" element={<Contactos/>}/>
+        <Route path="/" Component={Home} />
+        <Route path="/home" Component={Home} />
+        <Route path="/menupage" Component={MenuPage} />
+        <Route path="/promociones" Component={Promociones} />
+        <Route path="/extranjeros" Component={Extranjeros} />
+        <Route path="/tradicionales" Component={Tradicionales} />
+        <Route path="/videos" Component={Videos} />
+        <Route path="/registro" Component={Registro} />
+        <Route path="/pedidos" Component={Pedidos} />
+        <Route path="/perfil" Component={Perfil} />
+        <Route path="/contactos" Component={Contactos} />
         {/* Agrega rutas para otras páginas */}
       </Routes>
 
       {/* Muestra el componente Footer en la parte inferior de la aplicación */}
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
