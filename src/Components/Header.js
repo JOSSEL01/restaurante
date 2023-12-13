@@ -22,15 +22,15 @@ const Header = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="promociones">Promociones</Nav.Link>
-            <Nav.Link href="menuPage">Menu</Nav.Link>
-            <Nav.Link href="tradicionales">Platos Tradicionales</Nav.Link>
-            <Nav.Link href="extranjeros">Platos Extranjeros</Nav.Link>
-            <Nav.Link href="videos">Videos</Nav.Link>
-            <Nav.Link href="registro">Registro</Nav.Link>
-            <Nav.Link href="pedidos">Pedidos</Nav.Link>
-            <Nav.Link href="perfil">Perfil</Nav.Link>
-            <Nav.Link href="contactos">Contactos</Nav.Link>
+            <Nav.Link href="#/promociones">Promociones</Nav.Link>
+            <Nav.Link href="#/menuPage">Menu</Nav.Link>
+            <Nav.Link href="#/tradicionales">Platos Tradicionales</Nav.Link>
+            <Nav.Link href="#/extranjeros">Platos Extranjeros</Nav.Link>
+            <Nav.Link href="#/videos">Videos</Nav.Link>
+            <Nav.Link href="#/registro">Registro</Nav.Link>
+            <Nav.Link href="#/pedidos">Pedidos</Nav.Link>
+            <Nav.Link href="#/perfil">Perfil</Nav.Link>
+            <Nav.Link href="#/contactos">Contactos</Nav.Link>
             
             
           </Nav>
