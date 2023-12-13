@@ -6,46 +6,55 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/img/logo.svg';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
-        <Navbar.Brand href="/">
-          <img src={logo} alt='logo' width={80}/>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#/promociones">Promociones</Nav.Link>
-            <Nav.Link href="#/menuPage">Menu</Nav.Link>
-            <Nav.Link href="#/tradicionales">Platos Tradicionales</Nav.Link>
-            <Nav.Link href="#/extranjeros">Platos Extranjeros</Nav.Link>
-            <Nav.Link href="#/videos">Videos</Nav.Link>
-            <Nav.Link href="#/registro">Registro</Nav.Link>
-            <Nav.Link href="#/pedidos">Pedidos</Nav.Link>
-            <Nav.Link href="#/perfil">Perfil</Nav.Link>
-            <Nav.Link href="#/contactos">Contactos</Nav.Link>
-            
-            
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <img src={logo} alt='logo' className="logo-img"></img>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <Link class="nav-link" aria-current="page" to="/promociones">Promociones</Link>
+                </li>
+
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/menupage">Menu</Link>
+                </li>
+
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/tradicionales">Platos Tradicionales</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/extranjeros">Platos Extranjeros</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/videos">Videos</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/registro">Registro</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/pedidos">Pedidos</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/perfil">Perfil</Link>
+                </li>
+                <li class="nav-item">
+                    <Link class="nav-link active" aria-current="page" to="/contactos">Contactos</Link>
+                </li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
   );
 }
 
